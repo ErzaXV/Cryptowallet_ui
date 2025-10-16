@@ -1,0 +1,79 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="images\**" />
+    <EmbeddedResource Remove="images\**" />
+    <None Remove="images\**" />
+    <Page Remove="images\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="BTC.png" />
+    <None Remove="circul.png" />
+    <None Remove="ETH.png" />
+    <None Remove="icon-removebg-preview.png" />
+    <None Remove="images2\-.png" />
+    <None Remove="images2\BTC.png" />
+    <None Remove="images2\circul.png" />
+    <None Remove="images2\down.png" />
+    <None Remove="images2\ETH.png" />
+    <None Remove="images2\icon-removebg-preview.png" />
+    <None Remove="images2\LTC.png" />
+    <None Remove="images2\MNE.png" />
+    <None Remove="images2\purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png" />
+    <None Remove="images2\send.png.png" />
+    <None Remove="images2\settings.png" />
+    <None Remove="images2\SLN.png" />
+    <None Remove="images2\Support.png" />
+    <None Remove="images2\up.png" />
+    <None Remove="images2\USDT.png" />
+    <None Remove="images2\User.png.png" />
+    <None Remove="images2\X.png" />
+    <None Remove="LTC.png" />
+    <None Remove="MNE.png" />
+    <None Remove="purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png" />
+    <None Remove="send.png.png" />
+    <None Remove="settings.png" />
+    <None Remove="SLN.png" />
+    <None Remove="Support.png" />
+    <None Remove="USDT.png" />
+    <None Remove="User.png.png" />
+    <None Remove="X.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images2\down.png" />
+    <Resource Include="images2\SLN.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="images2\-.png" />
+    <Resource Include="images2\BTC.png" />
+    <Resource Include="images2\circul.png" />
+    <Resource Include="images2\ETH.png" />
+    <Resource Include="images2\icon-removebg-preview.png" />
+    <Resource Include="images2\LTC.png" />
+    <Resource Include="images2\MNE.png" />
+    <Resource Include="images2\purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png" />
+    <Resource Include="images2\send.png.png" />
+    <Resource Include="images2\settings.png" />
+    <Resource Include="images2\Support.png" />
+    <Resource Include="images2\up.png" />
+    <Resource Include="images2\USDT.png" />
+    <Resource Include="images2\User.png.png" />
+    <Resource Include="images2\X.png" />
+  </ItemGroup>
+
+</Project>

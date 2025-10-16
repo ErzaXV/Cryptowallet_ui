@@ -1,0 +1,450 @@
+﻿<Window x:Class="Crypto_wallet_ui.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Height="700" Width="1050" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen"
+        MouseDown="Mousedown_event">
+
+    <Border  Background="{StaticResource Orange}" CornerRadius="40" HorizontalAlignment="Center" VerticalAlignment="Center" >
+        <Grid Margin="0,0,901,0">
+            <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2" >
+                <StackPanel Background="Transparent" Height="700" Width="147">
+                    <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Margin="0,40,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="31*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Height="56" Width="64" Margin="0,-4,0,0" 
+                                     VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.526,0.522" Grid.RowSpan="2" Source="/images2/purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.148"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <TextBlock Text="Wallet" 
+                                    VerticalAlignment="Top" 
+                                    Foreground="White" 
+                                    FontSize="20" 
+                                    TextWrapping="NoWrap" RenderTransformOrigin="1.451,0.566" Margin="54,15,10,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Button>
+                    <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Margin="0,0,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="31*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Height="39" Margin="14,6,6,0" 
+                                      VerticalAlignment="Top" RenderTransformOrigin="0.346,0.58" Grid.RowSpan="2" Source="/images2/icon-removebg-preview.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.148"/>
+                                        <TranslateTransform X="-0.006" Y="-0.017"/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <TextBlock Grid.Column="1" Text="exchange" 
+                       VerticalAlignment="Top" 
+                        Foreground="White" 
+                       FontSize="17" 
+                        TextWrapping="NoWrap" RenderTransformOrigin="1.451,0.566" Margin="7,12,-6,0" Grid.RowSpan="2"/>
+                        </Grid>
+                    </Button>
+                    <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Margin="0,0,0,0">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="31*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Height="50" Margin="-7,4,27,0" 
+               VerticalAlignment="Top" RenderTransformOrigin="0.526,0.522" Grid.RowSpan="2" Source="/images2/send.png.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.148"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <TextBlock Text="Send" 
+                                 VerticalAlignment="Top" 
+                                 Foreground="White" 
+                                 FontSize="20" 
+                                RenderTransformOrigin="1.451,0.566" Margin="54,17,10,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Button>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="897,0,-899,0" Grid.Column="1" Grid.RowSpan="2">
+                <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Margin="0,40,0,0">
+                    <Button.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="31*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Height="46" Width="57" Margin="97,7,0,0" 
+                               VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.526,0.522" Grid.RowSpan="2" Grid.Column="1" Source="/images2/Support.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.148"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <TextBlock Text="Support" 
+                               VerticalAlignment="Top" 
+                               Foreground="White" 
+                               FontSize="20" 
+                                TextWrapping="NoWrap" RenderTransformOrigin="1.451,0.566" Margin="18,16,45,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Button.Content>
+                </Button>
+                <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Margin="0,0,0,0">
+                    <Button.Content>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="17*"/>
+                                <RowDefinition Height="31*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <Image Height="46" Width="53" Margin="97,12,0,0" 
+                              VerticalAlignment="Top" HorizontalAlignment="Left" RenderTransformOrigin="0.526,0.522" Grid.RowSpan="2" Grid.Column="1" Source="/images2/settings.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform/>
+                                        <SkewTransform/>
+                                        <RotateTransform Angle="0.606"/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+
+                            <TextBlock Text="Settings" 
+                               VerticalAlignment="Top" 
+                               Foreground="White" 
+                               FontSize="20" 
+                               TextWrapping="NoWrap" RenderTransformOrigin="1.451,0.566" Margin="18,16,45,0" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+                        </Grid>
+                    </Button.Content>
+                </Button>
+                <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="17*"/>
+                            <RowDefinition Height="31*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Image Height="50" Margin="59,4,-39,0" 
+                            VerticalAlignment="Top" RenderTransformOrigin="0.526,0.522" Grid.RowSpan="2" Grid.ColumnSpan="2" Source="/images2/User.png.png">
+                            <Image.RenderTransform>
+                                <TransformGroup>
+                                    <ScaleTransform/>
+                                    <SkewTransform/>
+                                    <RotateTransform Angle="0.148"/>
+                                    <TranslateTransform/>
+                                </TransformGroup>
+                            </Image.RenderTransform>
+                        </Image>
+
+                        <TextBlock Text="Account" 
+                            VerticalAlignment="Top" 
+                            Foreground="White" 
+                            FontSize="20" 
+                            RenderTransformOrigin="1.451,0.566" Margin="-20,14,18,0" Grid.RowSpan="2"/>
+                    </Grid>
+                </Button>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Grid.RowSpan="2" Margin="994,0,-891,663">
+                <Button Click="Application_exit" BorderBrush="Transparent" Width="36" Height="38" Margin="0,0,0,0" Background="Transparent">
+                    <Image Height="31" Width="30" Source="/images2/X.png"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Margin="972,4,-861,666" RenderTransformOrigin="0.5,0.5">
+                <Button Click="Application_minimize"  BorderBrush="Transparent" Width="27" Height="28" Background="Transparent">
+                    <Image Height="29" Width="23" Source="/images2/-.png"/>
+                </Button>
+            </StackPanel>
+            <StackPanel Height="300" Width="300" Margin="289,112,-611,300" RenderTransformOrigin="0.5,0.5" HorizontalAlignment="Center" VerticalAlignment="Top">
+                <Grid Height="300" Width="300">
+                    <Image Source="/images2/circul.png"/>
+                    <TextBlock  Foreground="White" FontSize="50"  Text="$0.0"  VerticalAlignment="Center" HorizontalAlignment="Center"/>
+                    <TextBlock Foreground="White" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" Text="Overall Funds" VerticalAlignment="Top"/>
+                </Grid>
+            </StackPanel>
+            <StackPanel  Margin="147,417,-750,0" RenderTransformOrigin="0.5,0.5">
+                <Grid Height="277">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Border Grid.Row="0" Grid.Column="2" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image Grid.Column="2" HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/BTC.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="btcprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Image Name="Btcstatuspic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48" />
+                            <TextBlock Name="btcstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="0" Grid.Column="1" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image Grid.Column="1" HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/ETH.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="ethprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+
+                            </TextBlock>
+                            <Image Name="ethstatispic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48" />
+                            <TextBlock Name="ethstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="0" Grid.Column="0" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/LTC.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="ltcprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Image Name="ltcstatuspic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48"/>
+                            <TextBlock Name="ltcstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="2" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image Grid.Column="2" Grid.Row="2" HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/MNE.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="mnreprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Image Name="xmrstatuspic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48"/>
+                            <TextBlock Name="xmrstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="1" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image Grid.Column="1" Grid.Row="2" HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/USDT.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="usdtprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Image Name="usdtstatuspic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48"/>
+                            <TextBlock Name="usdtstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                    <Border Grid.Row="1" Grid.Column="0" BorderBrush="White" BorderThickness="2">
+                        <Grid>
+                            <Image Grid.Column="0" Grid.Row="2" HorizontalAlignment="Left" Height="97" Margin="177,0,0,0" VerticalAlignment="Center" Width="69" RenderTransformOrigin="0.321,0.458" Source="/images2/SLN.png">
+                                <Image.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </Image.RenderTransform>
+                            </Image>
+                            <TextBlock Name="slnprice" FontSize="30" Foreground="White"  Text="$100.00" Margin="10,51,106,32" RenderTransformOrigin="0.5,0.5">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                            <Image Name="solstatuspic" HorizontalAlignment="Left" Height="42" Margin="33,10,0,0" VerticalAlignment="Top" Width="48" />
+                            <TextBlock Name="solstatus" FontSize="20" Foreground="White" Margin="0,18,0,0" TextWrapping="Wrap" Text="DOWN" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="82" HorizontalAlignment="Center" TextAlignment="Right">
+                                <TextBlock.RenderTransform>
+                                    <TransformGroup>
+                                        <ScaleTransform ScaleX="-1"/>
+                                        <SkewTransform/>
+                                        <RotateTransform/>
+                                        <TranslateTransform/>
+                                    </TransformGroup>
+                                </TextBlock.RenderTransform>
+                            </TextBlock>
+                        </Grid>
+                    </Border>
+                </Grid>
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleX="-1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+            </StackPanel>
+        </Grid>
+    </Border>
+</Window>
