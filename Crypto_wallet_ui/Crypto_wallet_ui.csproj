@@ -23,11 +23,14 @@
     <None Remove="images2\-.png" />
     <None Remove="images2\BTC.png" />
     <None Remove="images2\circul.png" />
+    <None Remove="images2\coinbase_logo.jpg" />
     <None Remove="images2\down.png" />
     <None Remove="images2\ETH.png" />
+    <None Remove="images2\google-removebg-preview.png" />
     <None Remove="images2\icon-removebg-preview.png" />
     <None Remove="images2\LTC.png" />
     <None Remove="images2\MNE.png" />
+    <None Remove="images2\Phantom wallet.png" />
     <None Remove="images2\purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png" />
     <None Remove="images2\send.png.png" />
     <None Remove="images2\settings.png" />
@@ -37,6 +40,7 @@
     <None Remove="images2\USDT.png" />
     <None Remove="images2\User.png.png" />
     <None Remove="images2\X.png" />
+    <None Remove="images2\Zoinbase.png" />
     <None Remove="LTC.png" />
     <None Remove="MNE.png" />
     <None Remove="purse-wallet-money-icon-white-260nw-1115829356-removebg-preview.png" />
@@ -50,7 +54,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="images2\coinbase_logo.jpg" />
     <Resource Include="images2\down.png" />
+    <Resource Include="images2\google-removebg-preview.png" />
+    <Resource Include="images2\Phantom wallet.png" />
     <Resource Include="images2\SLN.png" />
   </ItemGroup>
 
@@ -74,6 +81,7 @@
     <Resource Include="images2\USDT.png" />
     <Resource Include="images2\User.png.png" />
     <Resource Include="images2\X.png" />
+    <Resource Include="images2\Zoinbase.png" />
   </ItemGroup>
 
 </Project>

@@ -42,28 +42,29 @@ namespace Crypto_wallet_ui
 
                     BitmapImage up = new BitmapImage(new Uri(@"/images2/up.png", UriKind.Relative));
                     BitmapImage down = new BitmapImage(new Uri(@"/images2/down.png", UriKind.Relative));
+                    if (info != null)
+                    {
+                        btcprice.Text = $"${price(info.BTCUSD.VALUE)}";
+                        ethprice.Text = $"${UptoTwoDecimalPoints(info.ETHUSD.VALUE)}";
+                        ltcprice.Text = $"${UptoTwoDecimalPoints(info.LTCUSD.VALUE)}";
+                        mnreprice.Text = $"${UptoTwoDecimalPoints(info.XMRUSD.VALUE)}";
+                        usdtprice.Text = $"${UptoTwoDecimalPoints(info.USDTUSD.VALUE)}";
+                        slnprice.Text = $"${UptoTwoDecimalPoints(info.SOLUSD.VALUE)}";
 
-                    btcprice.Text =  $"${price(info.BTCUSD.VALUE)}";
-                    ethprice.Text = $"${UptoTwoDecimalPoints(info.ETHUSD.VALUE)}";
-                    ltcprice.Text = $"${UptoTwoDecimalPoints(info.LTCUSD.VALUE)}";
-                    mnreprice.Text = $"${UptoTwoDecimalPoints(info.XMRUSD.VALUE)}";
-                    usdtprice.Text = $"${UptoTwoDecimalPoints(info.USDTUSD.VALUE)}";
-                    slnprice.Text = $"${UptoTwoDecimalPoints(info.SOLUSD.VALUE)}";
+                        btcstatus.Text = (info.BTCUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
+                        ethstatus.Text = (info.ETHUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
+                        ltcstatus.Text = (info.LTCUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
+                        xmrstatus.Text = (info.XMRUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
+                        usdtstatus.Text = (info.USDTUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
+                        solstatus.Text = (info.SOLUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
 
-                    btcstatus.Text = (info.BTCUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-                    ethstatus.Text = (info.ETHUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-                    ltcstatus.Text = (info.LTCUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-                    xmrstatus.Text = (info.XMRUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-                    usdtstatus.Text = (info.USDTUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-                    solstatus.Text = (info.SOLUSD.VALUE_FLAG == "UP") ? "UP" : "DOWN";
-
-                    Btcstatuspic.Source = (info.BTCUSD.VALUE_FLAG == "UP") ? up : down;
-                    ethstatispic.Source = (info.ETHUSD.VALUE_FLAG == "UP") ? up : down;
-                    ltcstatuspic.Source = (info.LTCUSD.VALUE_FLAG == "UP") ? up : down;
-                    xmrstatuspic.Source = (info.XMRUSD.VALUE_FLAG == "UP") ? up : down;
-                    usdtstatuspic.Source = (info.USDTUSD.VALUE_FLAG == "UP") ? up : down;
-                    solstatuspic.Source = (info.SOLUSD.VALUE_FLAG == "UP") ? up : down;
-
+                        Btcstatuspic.Source = (info.BTCUSD.VALUE_FLAG == "UP") ? up : down;
+                        ethstatispic.Source = (info.ETHUSD.VALUE_FLAG == "UP") ? up : down;
+                        ltcstatuspic.Source = (info.LTCUSD.VALUE_FLAG == "UP") ? up : down;
+                        xmrstatuspic.Source = (info.XMRUSD.VALUE_FLAG == "UP") ? up : down;
+                        usdtstatuspic.Source = (info.USDTUSD.VALUE_FLAG == "UP") ? up : down;
+                        solstatuspic.Source = (info.SOLUSD.VALUE_FLAG == "UP") ? up : down;
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -99,6 +100,12 @@ namespace Crypto_wallet_ui
         private void Application_minimize(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
+        }
+
+        private void Account_Click(object sender, RoutedEventArgs e)
+        {
+            login_page Login_Page = new login_page();
+            Login_Page.Show();
         }
     }
 }

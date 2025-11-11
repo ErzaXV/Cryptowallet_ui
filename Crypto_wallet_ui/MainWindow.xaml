@@ -4,7 +4,7 @@
         Height="700" Width="1050" ResizeMode="NoResize" WindowStyle="None" AllowsTransparency="True" Background="Transparent" WindowStartupLocation="CenterScreen"
         MouseDown="Mousedown_event">
 
-    <Border  Background="{StaticResource Orange}" CornerRadius="40" HorizontalAlignment="Center" VerticalAlignment="Center" >
+    <Border  Background="{StaticResource ExodusBackgroundBrush}" CornerRadius="40" HorizontalAlignment="Center" VerticalAlignment="Center" >
         <Grid Margin="0,0,901,0">
             <StackPanel Grid.ColumnSpan="2" Grid.RowSpan="2" >
                 <StackPanel Background="Transparent" Height="700" Width="147">
@@ -165,7 +165,7 @@
                         </Grid>
                     </Button.Content>
                 </Button>
-                <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White">
+                <Button BorderBrush="Transparent" Height="70" Width="147" Background="Transparent" Foreground="White" Click="Account_Click">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="17*"/>
